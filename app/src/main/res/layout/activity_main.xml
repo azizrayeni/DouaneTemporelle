@@ -1,16 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- 1) Layout mta3 el formulaire : LinearLayout vertical (kol 7aja ta7t l'okhra) -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="24dp">
 
+    <!-- 2) El titre -->
     <TextView
         android:id="@+id/tv_titre_ar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="@string/titre_formulaire"
+        android:textColor="@color/bleu_nuit"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- 3) Esm el voyageur -->
+    <EditText
+        android:id="@+id/et_nom_ar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_nom"
+        android:inputType="textPersonName" />
+
+    <!-- 4) 3am el wil3da (ar9am bark) -->
+    <EditText
+        android:id="@+id/et_naissance_ar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_naissance"
+        android:inputType="number"
+        android:maxLength="4" />
+
+    <!-- 5) 3am el destination (ar9am bark) -->
+    <EditText
+        android:id="@+id/et_destination_ar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_destination"
+        android:inputType="number"
+        android:maxLength="4" />
+
+    <!-- 6) El motif : RadioGroup bech nekhtarou wa7ed bark -->
+    <TextView
+        android:id="@+id/tv_motif_label_ar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:textSize="24sp" />
+        android:layout_marginTop="16dp"
+        android:text="@string/label_motif"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rg_motif_ar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 7) Tourisme maktoub par defaut (checked) -->
+        <RadioButton
+            android:id="@+id/rb_tourisme_ar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/motif_tourisme" />
+
+        <RadioButton
+            android:id="@+id/rb_modification_ar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/motif_modification" />
+
+        <RadioButton
+            android:id="@+id/rb_fuite_ar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/motif_fuite" />
+    </RadioGroup>
+
+    <!-- 8) El bouton elli yeb3ath lel Activite 2 -->
+    <Button
+        android:id="@+id/btn_inspecter_ar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/bleu_nuit"
+        android:text="@string/btn_inspecter" />
 
 </LinearLayout>

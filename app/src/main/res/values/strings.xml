@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Douane Temporelle</string>
+
+    <!-- Activite 1 : formulaire -->
+    <string name="titre_formulaire">Poste de Douane Temporelle</string>
+    <string name="hint_nom">Nom du voyageur</string>
+    <string name="hint_naissance">Annee de naissance (ex: 1990)</string>
+    <string name="hint_destination">Annee de destination (ex: 2050)</string>
+    <string name="label_motif">Motif du voyage :</string>
+    <string name="motif_tourisme">Tourisme</string>
+    <string name="motif_modification">Modification du passé</string>
+    <string name="motif_fuite">Fuite</string>
+    <string name="btn_inspecter">Inspecter le profil</string>
+    <string name="erreur_champs">Remplir tous les champs svp !</string>
 </resources>

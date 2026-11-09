@@ -2,4 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <!-- Alwen mta3 l'application -->
+    <color name="bleu_nuit">#FF1A237E</color>
+    <color name="papier">#FFFFF8E1</color>
+    <color name="or">#FFC9A227</color>
+    <color name="vert">#FF2E7D32</color>
+    <color name="rouge">#FFC62828</color>
 </resources>
