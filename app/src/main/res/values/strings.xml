@@ -12,4 +12,11 @@
     <string name="motif_fuite">Fuite</string>
     <string name="btn_inspecter">Inspecter le profil</string>
     <string name="erreur_champs">Remplir tous les champs svp !</string>
+
+    <!-- Activite 2 : passeport -->
+    <string name="titre_passeport">PASSEPORT TEMPOREL</string>
+    <string name="btn_approuver">Approuver le saut temporel</string>
+    <string name="btn_refuser">Refuser (Risque de paradoxe)</string>
+    <string name="alerte_paradoxe">⚠ Paradoxe detecte : approbation impossible</string>
+    <string name="desc_image">Image du passeport</string>
 </resources>

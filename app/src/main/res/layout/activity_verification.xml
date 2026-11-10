@@ -1,6 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- 1) CONTRAINTE : el racine LinearLayout HORIZONTAL -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal" />
+    android:background="@color/bleu_nuit"
+    android:orientation="horizontal">
+
+    <!-- 2) 3al lisar : taswira (passeport.png fel dossier drawable) b poids 0.3 (width = 0dp bech el poids ye5dem) -->
+    <ImageView
+        android:id="@+id/iv_passeport_ar"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:contentDescription="@string/desc_image"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/passeport" />
+
+    <!-- 3) 3al limin : RelativeLayout b poids 0.7 lel textes (forme passeport) -->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:layout_weight="0.7"
+        android:background="@drawable/bg_passeport"
+        android:padding="16dp">
+
+        <!-- 4) Titre mta3 el passeport (louta men fou9) -->
+        <TextView
+            android:id="@+id/tv_titre_passeport_ar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:text="@string/titre_passeport"
+            android:textColor="@color/bleu_nuit"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- 5) Esm (ta7t el titre) -->
+        <TextView
+            android:id="@+id/tv_nom_ar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_titre_passeport_ar"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <!-- 6) 3am el wil3da (ta7t el esm) -->
+        <TextView
+            android:id="@+id/tv_naissance_ar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_nom_ar"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <!-- 7) 3am el destination -->
+        <TextView
+            android:id="@+id/tv_destination_ar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_naissance_ar"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <!-- 8) El 3omr el temporel (calcule fel Java) -->
+        <TextView
+            android:id="@+id/tv_age_ar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_destination_ar"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- 9) El motif -->
+        <TextView
+            android:id="@+id/tv_motif_ar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_age_ar"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <!-- 10) Message d'alerte : makhbi (gone) w yodhhor ken famma paradoxe -->
+        <TextView
+            android:id="@+id/tv_alerte_ar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_motif_ar"
+            android:layout_marginTop="12dp"
+            android:text="@string/alerte_paradoxe"
+            android:textColor="@color/rouge"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <!-- 11) Bouton Refuser : louta khaless (alignParentBottom) -->
+        <Button
+            android:id="@+id/btn_refuser_ar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/rouge"
+            android:text="@string/btn_refuser" />
+
+        <!-- 12) Bouton Approuver : fou9 bouton Refuser (layout_above) -->
+        <Button
+            android:id="@+id/btn_approuver_ar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_refuser_ar"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/vert"
+            android:text="@string/btn_approuver" />
+
+    </RelativeLayout>
+
+</LinearLayout>
