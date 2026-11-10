@@ -20,6 +20,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- 2) VerificationActivity : lazemha tetsajjel houni bech l'Intent yemchi -->
+        <activity
+            android:name=".VerificationActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

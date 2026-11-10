@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- 1) Layout mta3 el formulaire : LinearLayout vertical (kol 7aja ta7t l'okhra) -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- 1) ScrollView bech el formulaire yet3ada lfou9 w louta ki yo5rej el clavier -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="match_parent">
+
+<!-- 1') Layout mta3 el formulaire : LinearLayout vertical (kol 7aja ta7t l'okhra) -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="24dp">
 
@@ -91,3 +96,5 @@
         android:text="@string/btn_inspecter" />
 
 </LinearLayout>
+
+</ScrollView>
