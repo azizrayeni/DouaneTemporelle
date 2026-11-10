@@ -25,6 +25,11 @@
         <activity
             android:name=".VerificationActivity"
             android:exported="false" />
+
+        <!-- 3) ResultActivity : el verdict -->
+        <activity
+            android:name=".ResultActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
