@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- 1) Ecran tres simple : el lawn mta3 el fond yetbaddel fel Java (vert / rouge) -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" />
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- 2) El message personnalise -->
+    <TextView
+        android:id="@+id/tv_message_ar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <!-- 3) Bouton bech nrja3ou lel formulaire -->
+    <Button
+        android:id="@+id/btn_nouveau_ar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/bleu_nuit"
+        android:text="@string/btn_nouveau" />
+
+</LinearLayout>

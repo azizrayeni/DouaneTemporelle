@@ -19,4 +19,7 @@
     <string name="btn_refuser">Refuser (Risque de paradoxe)</string>
     <string name="alerte_paradoxe">⚠ Paradoxe detecte : approbation impossible</string>
     <string name="desc_image">Image du passeport</string>
+
+    <!-- Activite 3 : verdict -->
+    <string name="btn_nouveau">Nouveau voyageur</string>
 </resources>
